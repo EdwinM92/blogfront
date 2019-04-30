@@ -1,0 +1,17 @@
+<!-- <div style="margin-top:5%;"></div> -->
+<div class="row">
+  <div class="col s12 m7">
+    <div class="card" *ngFor="let item of datos; let i = index">
+      <div class="card-image">
+        <img src="http://127.0.0.1:3333/{{item.image}}">
+        <span class="card-title">{{item.name_blog}}</span>
+      </div>
+      <div class="card-content">
+        <p>{{item.sub_blog}}</p>
+      </div>
+      <div class="card-action">
+        <a href="/blogg/{{item.id}}">Ver Blog</a>
+      </div>
+    </div>
+  </div>
+</div>
